@@ -6,8 +6,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        cabin: "cabin",
-        urban: "urban",
+        urban: ["Urban", "sans-serif"],
+        poppins: ["poppins", "sans-serif"],
       }
     },
   },

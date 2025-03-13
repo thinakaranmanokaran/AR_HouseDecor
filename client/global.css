@@ -3,11 +3,15 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: cabin;
-    src: url(./src/assets/fonts/cabin/Cabin-Regular.ttf);
+    font-family: poppins;
+    src: url(./assets/fonts/Poppins-Bold.ttf);
 }
 
 @font-face {
     font-family: urban;
-    src: url(./src/assets/fonts/Urbanist-VariableFont_wght.ttf);
+    src: url(./assets/fonts/Urbanist-Regular.ttf);
+}
+
+.font-cabin{
+    font-family: cabin;
 }

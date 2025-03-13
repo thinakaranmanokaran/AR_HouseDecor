@@ -1,41 +1,31 @@
-import React from "react";
-// import { NavigationContainer } from "@react-navigation/native";
-// import { createStackNavigator } from "@react-navigation/stack";
-// import { GestureHandlerRootView } from "react-native-gesture-handler"; // Wrap the app with this
-// import { enableScreens } from "react-native-screens"; // Enable native screens
-// enableScreens();
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { View } from 'react-native';
+import { LandingPage, ThreeDScreen } from './src/components';
+import './global.css'
+// import LandingPage from './screens/LandingPage'; // Ensure the path is correct
+// import HomeScreen from './screens/HomeScreen'; // Replace with your actual Home screen
 
-import {NavigationContainer} from '@react-navigation/native';
-// import {createNativeStackNavigator} from '@react-navigation/native-stack';
-// const Stack = createNativeStackNavigator();
-import { LandingPage, ThreeDScreen } from "./src/components";
+const Stack = createNativeStackNavigator();
 
-// const Stack = createStackNavigator();
-
-export default function App() {
+const App = () => {
     return (
-            <NavigationContainer>
-                {/* <Stack.Navigator screenOptions={{ headerShown: false }}>
-                    <Stack.Screen name="Landing" component={LandingPage} />
-                    <Stack.Screen name="Home" component={ThreeDScreen} />
-                </Stack.Navigator> */}
-                <LandingPage />
-                {/* <H /> */}
-            </NavigationContainer>
-    ); 
-}
+        <NavigationContainer>
+            <Stack.Navigator initialRouteName="Landing">
+                <Stack.Screen 
+                    name="Landing" 
+                    component={LandingPage} 
+                    options={{ headerShown: false }} 
+                />
+                <Stack.Screen 
+                    name="Home" 
+                    component={ThreeDScreen} 
+                    options={{ headerShown: false }}  
+                />
+            </Stack.Navigator>
+        </NavigationContainer>
+    );
+};
 
-// import { StyleSheet, Text, View } from 'react-native'
-// import React from 'react'
-
-// const App = () => {
-//     return (
-//         <View>
-//             <ThreeDScreen />
-//         </View>
-//     )
-// }
-
-// export default App
-
-// const styles = StyleSheet.create({})
+export default App;
