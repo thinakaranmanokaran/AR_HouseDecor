@@ -6,6 +6,9 @@ import LoginVideo from './login.mp4'
 import Shoes from './products/shoes.jpg'
 import Scooty from './houses/603b0aff3a3d2efc86f9ddb03697dce9.jpg'
 
+import LandingPage from './landingpage/Cartoon_Robot_Outdoors.jpeg'
+import Gradient from './gradients/gradient.png'
+
 import Clock from './products/clock.jpg'
 import Books from './products/books.jpg'
 import Box from './products/box.jpg'
@@ -16,5 +19,5 @@ import Toy from './products/toy.jpg'
 export default {
     LandingGirl, ArtGirl, Scooty,
     
-    Shoes, Books, Box, TV, Tower, Toy, Clock, LoginVideo,
+    Shoes, Books, Box, TV, Tower, Toy, Clock, LoginVideo, LandingPage, Gradient
 }
